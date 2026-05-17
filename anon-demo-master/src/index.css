@@ -1,0 +1,421 @@
+/* Dark Mode Override Colors */
+html.dark-mode {
+  --white: #1A1D24;
+  --cultured: #252932;
+  --eerie-black: #F0EDE4;
+  --davys-gray: #D6D1C4;
+  --onyx: #E2DECF;
+  --sonic-silver: #9C9A91;
+  --spanish-gray: #6B6A63;
+  --salmon-pink: #E04040;
+  --sandy-brown: #6E9FC7;
+  --bittersweet: #E04040;
+  --ocean-green: #6E9FC7;
+  
+  --input-bg: #1E2129;
+  --input-border: #363A44;
+}
+
+/* Base style dark mode overrides */
+html.dark-mode body {
+  background-color: var(--white) !important;
+  color: var(--davys-gray) !important;
+}
+
+/* Inputs and Forms */
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea {
+  background-color: var(--cultured) !important;
+  color: var(--eerie-black) !important;
+  border-color: var(--spanish-gray) !important;
+}
+
+/* Placeholder styles */
+html.dark-mode input::placeholder {
+  color: var(--sonic-silver) !important;
+}
+
+/* Toast styles */
+html.dark-mode .notification-toast {
+  background-color: var(--cultured) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid var(--spanish-gray) !important;
+}
+html.dark-mode .toast-title {
+  color: var(--eerie-black) !important;
+}
+
+/* Modals */
+html.dark-mode .modal-content {
+  background-color: var(--white) !important;
+  border: 1px solid var(--cultured) !important;
+}
+html.dark-mode .newsletter-title {
+  color: var(--eerie-black) !important;
+}
+
+/* Product grid adjustments */
+html.dark-mode .showcase {
+  background-color: var(--cultured) !important;
+  border: 1px solid var(--cultured) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+html.dark-mode .showcase:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4) !important;
+}
+html.dark-mode .showcase-title {
+  color: var(--eerie-black) !important;
+}
+html.dark-mode .price-box .price {
+  color: var(--eerie-black) !important;
+}
+
+/* Sidebar and accordion menus */
+html.dark-mode .sidebar {
+  background-color: var(--white) !important;
+}
+html.dark-mode .sidebar-category {
+  background-color: var(--cultured) !important;
+  border: 1px solid var(--cultured) !important;
+}
+html.dark-mode .sidebar-submenu-category-list {
+  background-color: var(--white) !important;
+}
+html.dark-mode .sidebar-accordion-menu ion-icon {
+  color: var(--eerie-black) !important;
+}
+
+/* Navigation items */
+html.dark-mode .desktop-navigation-menu {
+  background-color: var(--white) !important;
+  border-bottom: 1px solid var(--cultured) !important;
+}
+html.dark-mode .desktop-menu-category-list {
+  background-color: var(--white) !important;
+}
+html.dark-mode .dropdown-panel {
+  background-color: var(--white) !important;
+  border: 1px solid var(--cultured) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+html.dark-mode .dropdown-list {
+  background-color: var(--white) !important;
+  border: 1px solid var(--cultured) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Header action buttons and search */
+html.dark-mode .action-btn {
+  color: var(--eerie-black) !important;
+}
+html.dark-mode .search-btn {
+  background-color: var(--cultured) !important;
+  color: var(--eerie-black) !important;
+}
+
+/* Mobile Navigation */
+html.dark-mode .mobile-bottom-navigation {
+  background-color: var(--white) !important;
+  border-top: 1px solid var(--cultured) !important;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark-mode .mobile-bottom-navigation .action-btn {
+  color: var(--eerie-black) !important;
+}
+html.dark-mode .mobile-navigation-menu {
+  background-color: var(--white) !important;
+}
+
+/* Product details / showcase details */
+html.dark-mode .showcase-banner {
+  background-color: var(--cultured) !important;
+}
+
+/* Product Minimal / top rated showcase list */
+html.dark-mode .showcase-container {
+  background-color: var(--white) !important;
+}
+html.dark-mode .showcase-content {
+  color: var(--davys-gray) !important;
+}
+
+/* Footer overrides */
+html.dark-mode footer {
+  background-color: hsl(220, 18%, 8%) !important;
+}
+html.dark-mode .footer-nav {
+  border-bottom: 1px solid var(--cultured) !important;
+}
+html.dark-mode .footer-nav-title {
+  color: var(--eerie-black) !important;
+}
+html.dark-mode .footer-bottom {
+  background-color: hsl(220, 18%, 6%) !important;
+}
+html.dark-mode .payment-img {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+/* Blog / services */
+html.dark-mode .service-container {
+  background-color: var(--cultured) !important;
+  border: 1px solid var(--cultured) !important;
+}
+html.dark-mode .blog-card {
+  background-color: var(--cultured) !important;
+  border: 1px solid var(--cultured) !important;
+}
+html.dark-mode .blog-title {
+  color: var(--eerie-black) !important;
+}
+
+/* Custom CSS Scrollbar dark mode */
+html.dark-mode body::-webkit-scrollbar-track {
+  background-color: var(--white) !important;
+  border-left: 1px solid var(--cultured) !important;
+}
+html.dark-mode body::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 12%, 25%) !important;
+  border: 3px solid var(--white) !important;
+}
+html.dark-mode body::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(220, 12%, 35%) !important;
+}
+
+/* Responsive utility classes */
+
+.product-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.cart-item-row,
+.wishlist-item-row {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  background-color: var(--white);
+  gap: 20px;
+}
+
+.cart-summary {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  background-color: var(--white);
+  text-align: right;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-details-grid { grid-template-columns: 1fr; }
+  .footer-bottom-inner { flex-direction: column; text-align: center; }
+  .footer-bottom-inner > div { align-items: center !important; }
+}
+
+@media (max-width: 570px) {
+  .cart-item-row,
+  .wishlist-item-row {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .cart-item-row > div:last-child,
+  .wishlist-item-row > div:last-child { align-self: flex-end; }
+  .header-logo-text { font-size: 24px !important; }
+  .payment-img { max-width: 260px !important; }
+  .banner-title { font-size: clamp(1rem, 5vw, 1.2rem) !important; line-height: 1.2 !important; }
+  .banner-subtitle { font-size: 0.75rem !important; }
+}
+
+@media (min-width: 571px) and (max-width: 768px) {
+  .banner-title { font-size: clamp(1.2rem, 4.5vw, 1.45rem) !important; line-height: 1.2 !important; }
+}
+
+/* Glassmorphism for banner content to ensure text readability on any image */
+.banner-content {
+  background: rgba(255, 253, 235, 0.85) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  padding: 20px 25px !important;
+  border-radius: var(--border-radius-md) !important;
+  border: 1px solid rgba(206, 38, 38, 0.15) !important;
+  box-shadow: 0 4px 20px rgba(206, 38, 38, 0.08) !important;
+  max-width: 480px !important; /* Ensure it stays compact and neat */
+}
+
+html.dark-mode .banner-content {
+  background: rgba(37, 41, 50, 0.85) !important;
+  border: 1px solid rgba(126, 170, 203, 0.2) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Ensure banner title and text use theme variables correctly */
+.banner-subtitle {
+  color: var(--salmon-pink) !important;
+}
+.banner-title {
+  color: var(--eerie-black) !important;
+  font-size: clamp(1.45rem, 3.5vw, 1.85rem) !important;
+  line-height: 1.25 !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+.banner-text {
+  color: var(--davys-gray) !important;
+}
+.banner-text b {
+  color: var(--eerie-black) !important;
+}
+
+/* ==========================================================================
+   COMPREHENSIVE RESPONSIVE FIXES (MOBILE & TABLET)
+   Ensures the entire website scales perfectly on all screen sizes.
+   ========================================================================== */
+
+/* 1. Prevent Horizontal Overflow Globally */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* 2. Fluid Images & Word Wrapping */
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* 3. Header Responsiveness (Tablets & Mobile) */
+@media (max-width: 768px) {
+  .header-main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  /* Force search bar to drop to its own line and take full width */
+  .header-search-container {
+    order: 3;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 5px;
+  }
+  
+  .header-logo {
+    order: 1;
+  }
+  
+  .header-user-actions {
+    order: 2;
+  }
+}
+
+/* 4. Deep Mobile Optimizations (Phones < 570px) */
+@media (max-width: 570px) {
+  /* Scale down Logo */
+  .header-logo img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .header-logo-text { 
+    font-size: 22px !important; 
+  }
+
+  /* Scale down User Actions to prevent overflow */
+  .header-user-actions {
+    gap: 8px !important;
+  }
+  .header-user-actions .action-btn {
+    font-size: 26px !important;
+    padding: 3px !important;
+  }
+  .header-user-actions .action-btn .count {
+    font-size: 10px !important;
+    padding: 1px 3px !important;
+    top: -2px !important;
+    right: -2px !important;
+  }
+
+  /* Compact Banner Content */
+  .banner-content {
+    padding: 15px !important;
+    left: 15px !important;
+    right: 15px !important;
+    bottom: 15px !important;
+    width: calc(100% - 30px) !important;
+    max-width: none !important;
+  }
+
+  /* Categories Row Spacing */
+  .category-item {
+    min-width: 150px; /* Ensure category cards don't shrink too much */
+  }
+
+  /* Ensure main container has breathing room */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* ==========================================================================
+   INTERACTIVE HOVER ANIMATIONS
+   ========================================================================== */
+
+/* Pop-out Hover Effect for Minimal Product Showcases (New Arrivals, Trending, etc.) */
+.product-minimal .showcase,
+.sidebar .product-showcase .showcase {
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease !important;
+  will-change: transform, box-shadow;
+}
+
+.product-minimal .showcase:hover,
+.sidebar .product-showcase .showcase:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08) !important;
+  border-color: var(--salmon-pink) !important;
+  z-index: 2;
+  position: relative;
+}
+
+html.dark-mode .product-minimal .showcase:hover,
+html.dark-mode .sidebar .product-showcase .showcase:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Header Action Buttons Hover Effect */
+.header-user-actions .action-btn {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  border-radius: 50% !important;
+  position: relative;
+}
+
+.header-user-actions .action-btn:hover {
+  transform: scale(1.15) translateY(-3px) !important;
+  color: var(--salmon-pink) !important;
+  background-color: rgba(224, 64, 64, 0.08) !important;
+  box-shadow: 0 5px 12px rgba(224, 64, 64, 0.1) !important;
+}
+
+html.dark-mode .header-user-actions .action-btn:hover {
+  background-color: rgba(224, 64, 64, 0.15) !important;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4) !important;
+}

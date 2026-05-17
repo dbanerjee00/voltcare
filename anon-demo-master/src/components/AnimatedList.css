@@ -1,0 +1,110 @@
+.scroll-list-container {
+  position: relative;
+  width: 100%;
+}
+
+.scroll-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+  background-color: var(--white);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--cultured);
+}
+
+.scroll-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-list::-webkit-scrollbar-track {
+  background: var(--cultured);
+}
+
+.scroll-list::-webkit-scrollbar-thumb {
+  background: var(--sonic-silver);
+  border-radius: 4px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.item {
+  padding: 16px;
+  background-color: var(--cultured);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.item:hover {
+  background-color: var(--white);
+  border-color: var(--salmon-pink);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.item.selected {
+  background-color: var(--white);
+  border-color: var(--salmon-pink);
+}
+
+html.dark-mode .scroll-list {
+  background-color: var(--eerie-black);
+  border-color: var(--jet);
+}
+
+html.dark-mode .item {
+  background-color: var(--jet);
+}
+
+html.dark-mode .item:hover, html.dark-mode .item.selected {
+  background-color: var(--eerie-black);
+}
+
+.item-text {
+  color: var(--eerie-black);
+  margin: 0;
+  font-weight: 500;
+}
+
+html.dark-mode .item-text {
+  color: var(--white);
+}
+
+.top-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9), transparent);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+}
+
+.bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+}
+
+html.dark-mode .top-gradient {
+  background: linear-gradient(to bottom, rgba(33,33,33,0.9), transparent);
+}
+
+html.dark-mode .bottom-gradient {
+  background: linear-gradient(to top, rgba(33,33,33,0.9), transparent);
+}
